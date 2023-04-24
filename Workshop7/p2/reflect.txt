@@ -1,0 +1,57 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #7
+Full Name  : ARYAN TUWAR
+Student ID#: 112137229
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. Yes i was successfull in coding non-repetitive sections of logic in the game play portion of this workshop, I did it by breaking down the game play portion into smaller modules or functions that handle specific tasks.
+-By doing this, the code can be organized and structured in a way that avoids repetition and makes it easier to modify or extend the game play logic. 
+-Using Structure made it easier to fullfill the task and by using arrays I was able to represent some common things such as , the position of player was tracked as indices within the array.
+- Also, by seperating the game state from logic , it was possible to write a code that specifically handle the game state once, while allowing the game logic to iterate over the state in a non-repetitive manner.
+-It was really important to consider the use of loops and conditional statements to handle those repetitive tasks (Which was the most time consuming part). By using loop, the code became more readable and organised.
+
+2.The use of structures basically simplified the program by allowing related data to be grouped together, improving the organization and management of data, and reducing the amount of code needed to represent complex entities for me. 
+-It stored a set of data which simplified the program by reducing the amount of code that need to be written and also saved a lot of time.
+-Without structure i would need to use multiple variables to represent the different pieces of game state information which would have led me to confusion and error (because of the length of code) so using structure had a big plus, which was that the program was able to maintain a single entity that represent the game state, allowing for simpler and more concise code.
+
+3.Excessive levels of nesting could have made my code more  difficult to read and maintain. I feel we should limit nesting to a reasonable level, ideally not exceeding three or four levels. 
+-Personally i went with nesting max to max with 3 times and not more than that i am pretty lousy when remarking my mistakes and solving them so i try to always avoid doing things which could probably cause more errors or mistakes by me or limit them at a specific point, 
+-In this code, i guess my part with // Table had the highest number of nested construct as given below which was used by me.
+
+
+do {
+        // Line 1
+        for (k = 0; k < game.pathLength; k++)
+        {
+            if (currentPosition[k] == 'V')
+            {
+            }
+        }
+        if (verCount == 0)
+        {
+
+        }
+        else
+        {
+            for (k = 0; k < game.pathLength; k++)
+            {
+                if (currentPosition[k] == 'V')
+                {
+                }
+                else
+                {
+                }
+            }
+        }
+        for (k = 0; k < game.pathLength; k++)
+        {
+            currentPosition[k] = ' ';
+        }
+
+This was just for the tables first line and then there were similarly more lines until 4 which were marked in comments as // line {second,third,fourth} // the only reason to use comments as well was because of the nested construct and to allow more readability to the the reader.

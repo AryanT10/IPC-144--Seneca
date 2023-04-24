@@ -1,0 +1,31 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #5
+Full Name  : ARYAN TUWAR
+Student ID#: 112137229
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+1. There are some different advantages of using varaibles and macros to represent information, instead of hardcoding costant literals, those arrre as follows :
+
+-The code is made simpler to comprehend and maintain by having descriptive variable names, especially for future developers who may work on the same code. This is crucial in big and complicated codebases because a hardcoded constant literal's context might not be immediately obvious.
+
+-If a constant literal is used more than once, it must be changed each time the value is changed. On the other hand, if you use a variable or macro, you only need to modify the value once, and all of the locations the variable or macro is used will update to reflect the change. This decreases the chance of human error, speeds up the updating process, and saves time.
+
+-Constants may be managed and tracked more easily if they are defined in a single location. This makes the code more modular and reusable by enabling you to reuse the same value without having to replicate it in multiple places.
+
+-In general, utilising variables and macros rather to hardcoding constant literals results in more maintainable, adaptable, and modular code, which can ultimately save time and effort.
+
+
+2. Why to seperate the sum and average logic from the validation routine ? So i feel that :
+
+-The code is made simpler to comprehend and maintain by dividing the validation and calculation logic into different parts. The calculation logic can be focused on finding the sum and average, while the validation logic can be focused on determining if the input values are within the desired range. This makes the code easier to understand, debug, and change as needed.
+
+-The validation algorithm is reusable since it merely checks to see if the input values are inside the appropriate range. The validation logic does not need to be repeated for each computation, which saves time and effort. Furthermore, if the validation logic has to be changed in the future, you only need to make the change once, and all code segments that utilise the logic will be updated to reflect the change.
+
+-Therefore, it's better to seperate the validation and calculation logic into seperate section with much better design and more conveniency to the reader, also this code be reused and that mignt save time and efforts for our future self.

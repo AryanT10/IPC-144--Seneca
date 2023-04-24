@@ -1,0 +1,14 @@
+In line number 101 of your output:
+The output should be:
+You picked too many... only 15 more TOMATO(ES) are needed.
+                                          ^
+But your output is: 
+You picked too many... only 15 more TOMATOES(S) are needed.
+                                          ^
+
+Unmatched character details:
+The character in column 43 is supposed to be:
+  [(] ASCII code(40)
+but you printed
+  [E] ASCII code(69)
+

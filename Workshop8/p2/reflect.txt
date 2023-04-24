@@ -1,0 +1,32 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #8
+Full Name  : ARYAN TUWAR
+Student ID#: 112137229
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. ANSWER 1
+-More flexibility is one advantage of having helper functions that may return values using either a return or an argument. The caller can decide whether to utilise the updated value or the returned value by enabling the function to both return a value and update a variable provided in as an argument. When the caller requires both the function's output and the original variable to be preserved, this might be helpful.
+-On the other hand, having functions that operate in this way might be problematic since it can cause confusion and make the code more challenging to read and maintain. When a function contains both an argument and a return value, the caller might not be aware of which value should be utilised, which could result in problems and errors. The caller would need to test both the argument and return value possibilities, which might make it more difficult to test the method. This may reduce the codebase's ability to be maintained and raise the possibility of problem introduction. Because of this, it's crucial to carefully weigh the trade-offs when creating functions that operate in this manner.
+
+
+2. ANSWER 2
+-One function in the workshop that demonstrates less than perfect cohesion is "calculateReportData()". This function is responsible for deriving a reporting detail record based on the cat food product data, but it also performs several calculations such as converting weights and calculating servings and cost per serving. To improve the cohesion of this function, these calculations should be moved to separate functions, leaving "calculateReportData()" to focus solely on deriving the reporting detail record based on the given cat food data.
+-"displayReportData()" is one function that exhibits coupling that might be improved. This function, which is closely related to the calculateReportData() method, accepts a ReportData struct as an input. Instead of reusing the CatFoodInfo struct, it would be preferable to construct a distinct data structure with the required fields for the analysis findings in order to strengthen the coupling of this function. Because it would be simpler to write separate test cases for both "calculateReportData()" and "displayReportData()", this would make the code more modular and testable. Also, since it would no longer be dependent on the "calculateReportData()" method, it would be simpler to reuse the "displayReportData()" function in other settings.
+
+3. ANSWER 3
+-The benefits of passing structures to functions are numerous. First off, it makes the function call more clear and succinct by enabling numerous values to be supplied to the function without the need for additional arguments. Second, it enables the consolidation of related data into a single object, potentially increasing the modularity and maintainability of the code. Furthermore, because the structure description clearly specifies the required data, sending structures to functions can lower the likelihood of mistakes brought on by giving the incorrect types of inputs.
+-I think that, to utilise pointers to structures rather than passing structures by value to functions to increase the efficiency of structure passing. By eliminating the need to replicate the complete structure, this can increase efficiency while lowering the memory overhead of forwarding big structures. Furthermore, if the structure is changed inside the function, supplying a pointer to it enables the changes to be reflected in the original structure, as opposed to passing a structure by value, which would produce a clone of the structure that is unaffected by any changes made to the original.
+-Instead of supplying the structure by value, the displayCatfoodData method might be enhanced by utilising a reference to the structure. Performance would increase and memory overhead would be decreased, especially if the structure is huge. Moreover, the function signature may be changed such that it now accepts a reference to CatFoodInfo as an argument, as in used in part ( //6. Display a formatted record of cat food data ) 
+
+  void displayCatFoodData( int skuNumber, double* productPrice, int calories, double* productWeight)
+{
+	printf("%07d %10.2lf %10.1lf %8d\n", skuNumber, *productPrice, *productWeight, calories);
+}
+
+Using a pointer to the structure instead of passing it by value would make the function call more efficient and reduce the memory overhead.

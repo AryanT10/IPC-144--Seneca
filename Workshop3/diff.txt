@@ -1,0 +1,14 @@
+In line number 48 of your output:
+The output should be:
+Enter how you like your coffee...
+                              ^
+But your output is: 
+Enter how you like your coffee
+                               ^
+
+Unmatched character details:
+The character in column 32 is supposed to be:
+  [.] ASCII code(46)
+but you printed
+  [Empty Line] ASCII code(0)
+

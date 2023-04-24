@@ -1,0 +1,52 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #4
+Full Name  : ARYAN TUWAR
+Student ID#: 112137229
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1.I used the following best practises to create the code that was simple to read and maintain:
+
+- To clearly distinguish code blocks and make it simpler to see the control flow, consistently sunk the code throughout.
+
+-Using relevant and descriptive variable, function, and class names to make the code easier to read and minimise the need for comments.
+
+-Utilized white space properly to divide the code into small, understandable sections, which made it simpler to comprehend the logic and flow of the code.
+
+- Documented the code to make the code easier to comprehend and maintain, inline comments were included to clarify the intent and function of the code.
+
+-Used reusable and modular components, making it simpler and to keep up with and grow in the future.
+
+-I reduced the likelihood of issues and made the code simpler for others to comprehend and work with in the future by adhering to these best practises to make sure it was well-structured, legible, and maintainable.
+
+
+2.The structure and difficulty of the code would be significantly impacted if nesting were not possible in this workshop. Nested logic is an effective tool for managing a program's flow and making complex judgements depending on several factors.
+
+-Without nesting, the code would probably grow considerably longer, more repetitive, and more challenging to read and understand. If nested conditionals were not an option, for instance, each conditional statement would have to be written as a separate block of code, making it challenging to manage the program's flow and comprehend the connections between various conditions.
+
+-It would be more difficult to create complicated algorithms and data structures,codes which largely rely on nesting and defines difference in elements.
+
+-If there were no nested loops it would limit the utility of code and it would be limited by the absence of nested loop, making it challenging to create and maintain and perhaps lowering efficiency and accuracy.
+ 
+3. If we are using (if) path it will be wasteful to access user input and carry out particular logic for each value within a define the range using "if" path structure because :
+
+- If a bug is noted or overlooked then it is introduced, which mmight result in insufficient detection of all possible outcomes.
+
+-The use of that will rise as the range of potential values grows, which makes the code more complex and hard to read
+
+-The identical validation check will need to be run by each "if" expression, creatiing the repetitive code that is difficult to maintain
+
+-On the otehr hand , this logic is more practical and efficient approach since it is :
+
+-The logic for handling each value is grouped together, and the relationship between differnt values are clearky described,making the code more simple and readable.
+
+-If the preceding "if" or "else if" line fails, the code to handle the value run and the validityu check is done only once.
+
+-The danger of unexpected behaviour can be decreased by utilising the "els" statement to make sure taht all the potential values which are covered and handled perfectly.
+
+-Thats why this path is the effective approach for managing this type of selection logic, as it provides a more efficient code.

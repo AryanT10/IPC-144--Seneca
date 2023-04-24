@@ -1,0 +1,41 @@
+1. In order to organise the data for this workshop, I utilised three parallel arrays.
+The arrays are as follows: char finance options, int priority, and double cost[wishList]
+[wishList];
+
+-The amount of goods on the user's wishlist, in my opinion, was the key. The cost of the things added to 
+ the wish list was kept in the 'cost' array according to the index number.
+
+- Example: The first item was placed at index zero, followed by the second item at index one, and so on.
+ Therefore, for instance, we only need to take away one and look at the second index in order to access the
+ third item. The 'priority' array and 'financeOption', which was created using the same theory, was defined
+ if the item has finance options or not, and the order of priority were both stored here.
+
+2. Since array indexing begins at 0, we need initialise the iterator variable to zero before iterating 
+arrays. When accessing an element in an array, you must deduct one from the index if iterations on the 
+array are initialised from 1.
+
+-I declared array just before using them, reason is i tried to declare all above but the segmentation 
+ fault kept popping and when i kept arrays just before using it worked perfectly which was the same for 
+ workhop6 part1 respectively. 
+ In this programme, for instance, I've started each iteration from 1. for I = 1; I = wishListItems; i++)
+
+-As a result, each time I wish to access a member of the array, I must take 1 out of the index.
+ &cost[i - 1], "%lf", scanf;
+ If cost[i - 1] min cost and cost[i - 1] min cost, respectively;
+
+-If I had begun the for loop at zero, this might have been accomplished more effectively.
+ i++ is used for I = 0; I wishListItems);
+
+-I no longer need to deduct 1 each time I access a value from the array.
+ "%lf", "&cost[i]", scanf;
+ If (cost[i] min cost) and (cost[i] min cost), respectively.
+
+3. Each centimetre on a ruler represents the location of an item in an array. Let's use a 15 cm scale as 
+an example. It begins at zero and continues all the way up to fifteen. The ruler is therefore comparable 
+to a size 15 array that can contain up to 15 items. Consider giving each number on the scale any integer 
+value. Imagine that the scale's reading of 12 has been replaced with the number 78. This indicates that 
+the position is 12 and the value is 78. Hence, anytime you need to access 78, it will be at position 12 
+of the list. Notice that, like a ruler, the positions always begin at zero.As a result, a 15-element 
+array's locations would range from 0 to 14. Moreover, keep in mind that the scale's numbers appear one 
+after the other (unless you break the scale of course). The computer saves arrays in memory in this 
+manner. It always puts the individual values in the array in the computer's memory one at a time.
